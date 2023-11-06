@@ -18,5 +18,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+.decoration-yellow {
+  color: #F9F871;
 }
