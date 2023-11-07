@@ -1,8 +1,8 @@
-import NavBar from './components/NavBar'
 import './globals.css'
 
 import { Montserrat } from 'next/font/google'
 import type { Metadata } from 'next'
+import Cursor from './components/Cursor'
 
 
 const montserrat = Montserrat({ subsets: ['latin'] })
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <NavBar />
+        <Cursor />
         {children}
       </body>
     </html>

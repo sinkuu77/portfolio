@@ -31,3 +31,11 @@ body {
 .decoration-green {
   color: #272E2B;
 }
+
+.bg-yellow {
+  color: #F9F871;
+}
+
+.cursor-size {
+  font-size: 5px;
+}
