@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 export default function NavBar() { 
     return (
-        <nav className='absolute right-10 top-1/3 w-80 h-80 bg-white opacity-80 rounded-xl p-6'>
-            <ul className='decoration-green text-2xl font-bold h-full flex flex-col gap-12'>
+        <nav className='relative'>
+            <ul className='decoration-yellow text-xl font-bold h-full flex flex gap-12'>
                 <li>
                     <Link className='view' href='/profile'>Profile</Link>
                 </li>

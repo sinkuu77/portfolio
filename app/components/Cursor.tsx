@@ -38,7 +38,7 @@ export default function Cursor() {
         document.addEventListener('mousemove', onMouseMove)
     })
     return (
-        <div id='cursor' className='fixed top-0 left-0 w-4 h-4 rounded-full z-10 mix-blend-difference p-2.5 flex justify-center items-center bg-amber-200'>
+        <div id='cursor' className='fixed top-5 left-5 w-4 h-4 rounded-full z-10 mix-blend-difference p-2.5 flex justify-center items-center bg-amber-200'>
             <span className='cursor-text cursor-size font-bold tracking-normal hidden'>
                 View
             </span>
