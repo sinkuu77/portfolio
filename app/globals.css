@@ -39,3 +39,42 @@ body {
 .cursor-size {
   font-size: 5px;
 }
+
+.vertical {
+  writing-mode: vertical-rl;
+}
+
+.height {
+  height: 75%;
+}
+
+@keyframes moveSmallBar {
+  0% {
+    transform-origin: 0.75px 0px;
+    transform: scale(1, 0.1);
+  }
+
+  20% {
+    transform: translate3d(0px, 160%, 0px) scale(1, 0.3)
+  }
+
+  40% {
+    transform: translate3d(0px, 220%, 0px) scale(1, 0.5)
+  }
+
+  60% {
+    transform: translate3d(0px, 280%, 0px) scale(1, 0.7)
+  }
+
+  80% {
+    transform: translate3d(0px, 340%, 0px) scale(1, 0.9)
+  }
+
+  100% {
+    transform: translate3d(0px, 400%, 0px) scale(1);
+  }
+}
+
+.small-bar {
+  animation: moveSmallBar 3s linear infinite;
+}

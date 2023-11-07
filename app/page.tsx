@@ -1,4 +1,6 @@
 import NavBar from './components/NavBar';
+import Scroll from './components/Scroll';
+
 import {FaFilePdf} from 'react-icons/fa'
 
 export default function Home() {
@@ -20,6 +22,7 @@ export default function Home() {
           </div>
           <NavBar/>
         </header>
+        <Scroll />
       </main>
     </>
   );

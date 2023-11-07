@@ -2,6 +2,7 @@ import './globals.css'
 
 import { Montserrat } from 'next/font/google'
 import type { Metadata } from 'next'
+
 import Cursor from './components/Cursor'
 
 
