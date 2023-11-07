@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar';
+import {FaFilePdf} from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -8,9 +9,14 @@ export default function Home() {
           <source src="/ferris_wheel.mp4" type="video/mp4" />
         </video>
         <header className='p-6 flex justify-between'>
-          <div className="relative text-lg decoration-yellow">
-            <h1><strong>GWON Minyoung</strong></h1>
-            <h2>Front-End <br />Développeur</h2>
+          <div className="relative text-lg decoration-yellow flex items-center justify-between gap-10">
+            <div>
+              <h1><strong>GWON Minyoung</strong></h1>
+              <h2>Front-End <br />Développeur</h2>
+            </div>
+            <div className='text-2xl'>
+              <FaFilePdf/>
+            </div>
           </div>
           <NavBar/>
         </header>

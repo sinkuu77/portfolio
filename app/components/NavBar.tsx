@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function NavBar() { 
     return (
         <nav className='relative'>
-            <ul className='decoration-yellow text-xl font-bold h-full flex flex gap-12'>
+            <ul className='decoration-yellow text-xl font-bold h-full flex gap-12'>
                 <li>
                     <Link className='view' href='/profile'>Profile</Link>
                 </li>
