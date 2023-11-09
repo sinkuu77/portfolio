@@ -50,7 +50,6 @@ body {
 
 @keyframes moveSmallBar {
   0% {
-    transform-origin: 0.75px 0px;
     transform: scale(1, 0.1);
   }
 
