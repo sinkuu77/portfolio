@@ -4,6 +4,9 @@ import { Montserrat } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import Cursor from './components/Cursor'
+import NavBar from './components/NavBar'
+import Profile from './profile/page'
+
 
 
 const montserrat = Montserrat({ subsets: ['latin'] })

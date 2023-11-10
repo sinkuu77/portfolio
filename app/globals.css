@@ -77,3 +77,7 @@ body {
 .small-bar {
   animation: moveSmallBar 3s linear infinite;
 }
+
+.full-screen {
+  height: 2000px
+}

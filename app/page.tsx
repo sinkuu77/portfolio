@@ -1,7 +1,14 @@
+'use client'
+
 import NavBar from './components/NavBar';
 import Scroll from './components/Scroll';
+import Profile from './profile/page';
+import Projects from './projects/page';
+import Skills from './skills/page';
+import Contact from './contact/page';
 
 import {FaFilePdf} from 'react-icons/fa'
+import { Element } from 'react-scroll'
 
 export default function Home() {
   return (
@@ -25,6 +32,19 @@ export default function Home() {
           <NavBar/>
         </header>
         <Scroll />
+        <Element name='profile' className='full-screen'>
+          <Profile />
+        </Element>
+        <Element name='projects' className='h-screen'>
+          <Projects />
+        </Element>
+        <Element name='skills' className='h-screen'>
+          <Skills />
+        </Element>
+        <Element name='contact' className='h-screen'>
+          <Contact />
+        </Element>
+      
       </main>
     </>
   );
