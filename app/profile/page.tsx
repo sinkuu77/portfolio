@@ -2,7 +2,9 @@
 export default function Profile() { 
     return (
         <>
-        Profile
+        <div className='bg-main h-screen w-2/4'>
+
+        </div>
         </>
     )
 }
