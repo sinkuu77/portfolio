@@ -12,11 +12,22 @@ export default function NavBar() {
                     <Link 
                     activeClass='active'
                     className='view hover:cursor-pointer' 
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    duration={700}
+                    offset={0}
+                    >Home</Link>
+                </li>
+                <li>
+                    <Link 
+                    activeClass='active'
+                    className='view hover:cursor-pointer' 
                     to='profile'
                     spy={true}
                     smooth={true}
                     duration={700}
-                    offset={1000}
+                    offset={0}
                     >Profile</Link>
                 </li>
                 <li>
