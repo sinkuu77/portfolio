@@ -78,6 +78,14 @@ body {
   animation: moveSmallBar 3s linear infinite;
 }
 
-.full-screen {
-  height: 2000px
+.button-background {
+  background-color: #3D4A3D;
+}
+
+.text-main {
+  color: #272E2B;
+}
+
+.bg-main {
+  background-color: #BCC6E9;
 }

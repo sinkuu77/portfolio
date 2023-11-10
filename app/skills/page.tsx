@@ -1,3 +1,3 @@
 export default function Skills() { 
-    return <div id='skills'>Skills</div>
+    return <div>Skills</div>
 }

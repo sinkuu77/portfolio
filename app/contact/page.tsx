@@ -1,3 +1,3 @@
 export default function Contact() { 
-    return <div id='contact'>Contact</div>
+    return <div>Contact</div>
 }
