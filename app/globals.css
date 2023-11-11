@@ -78,6 +78,28 @@ body {
   animation: moveSmallBar 3s linear infinite;
 }
 
+.custom-shape-divider-bottom-1699729836 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+.custom-shape-divider-bottom-1699729836 svg {
+  position: relative;
+  display: block;
+  width: calc(167% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1699729836 .shape-fill {
+  fill: #BCC6E9;
+}
+
 .button-background {
   background-color: #3D4A3D;
 }
@@ -101,4 +123,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 200px;
+}
+
+.custom-shape-divider-top-1699730016 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1699730016 svg {
+  position: relative;
+  display: block;
+  width: calc(167% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1699730016 .shape-fill {
+  fill: #BCC6E9;
 }
