@@ -83,9 +83,18 @@ body {
 }
 
 .text-main {
-  color: #272E2B;
+  color: #3D4A3D;
 }
 
 .bg-main {
   background-color: #BCC6E9;
+}
+
+.typeit {
+  color: #65F8D8;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

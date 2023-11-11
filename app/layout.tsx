@@ -1,6 +1,6 @@
 import './globals.css'
 
-import { Montserrat } from 'next/font/google'
+import { Karla } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import Cursor from './components/Cursor'
@@ -9,7 +9,7 @@ import Profile from './profile/page'
 
 
 
-const montserrat = Montserrat({ subsets: ['latin'] })
+const karla = Karla({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={karla.className}>
         <Cursor />
         {children}
       </body>
