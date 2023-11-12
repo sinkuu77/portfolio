@@ -86,7 +86,7 @@ body {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
-  z-index: 0;
+  z-index: -1;
 }
 
 .custom-shape-divider-bottom-1699729836 svg {

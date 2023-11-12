@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <>
             <section className="w-full h-full relative">
-                <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover -z-1">
+                <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover -z-10">
                 <source src="/ferris_wheel.mp4" type="video/mp4" />
                 </video>
                 <header className='p-6 flex justify-between'>
