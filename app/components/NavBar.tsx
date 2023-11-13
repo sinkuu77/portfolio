@@ -7,7 +7,7 @@ import { Link } from 'react-scroll'
 export default function NavBar() { 
     return (
         <nav className='fixed right-7 bg-white opacity-70 px-3 rounded-md'>
-            <ul className='text-main text-xl font-bold h-full flex gap-12'>
+            <ul className='text-gray-700 text-xl font-bold h-full flex gap-12'>
                 <li>
                     <Link 
                     activeClass='active'

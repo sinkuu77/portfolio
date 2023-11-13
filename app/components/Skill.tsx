@@ -8,7 +8,7 @@ export default function Skill() {
     return (
         <section className='flex justify-center pl-[75px]'>
             <div className="flex">
-                <div className="v-boxes">
+                <div className="flex flex-col v-boxes">
                 <div className="box">
                     <span className="tooltip">NextJs</span>
                     <div className="box-face">
@@ -42,7 +42,7 @@ export default function Skill() {
                     </div>
                 </div>
                 </div>
-                <div className="v-boxes second mt-[75px]">
+                <div className="flex flex-col v-boxes mt-[75px]">
                 <div className="box">
                     <span className="tooltip">TypeScript</span>
                     <div className="box-face">
@@ -68,7 +68,7 @@ export default function Skill() {
                     </div>
                 </div>
                 </div>
-                <div className="v-boxes mt-[150px]">
+                <div className="flex flex-col v-boxes mt-[150px]">
                 <div className="box">
                     <span className="tooltip">Tailwind</span>
                     <div className="box-face">
@@ -86,7 +86,7 @@ export default function Skill() {
                     </div>
                 </div>
                 </div>
-                <div className="v-boxes forth">
+                <div className="flex flex-col v-boxes mt-[225px]">
                 <div className="box link">
                     <div className="box-face">
                     <div className="box-text"><AiFillGithub /></div>

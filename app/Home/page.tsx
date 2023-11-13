@@ -13,7 +13,7 @@ export default function Home() {
                 <source src="/ferris_wheel.mp4" type="video/mp4" />
                 </video>
                 <header className='p-6 flex justify-between'>
-                    <div className="relative text-lg decoration-yellow flex items-center justify-between gap-10">
+                    <div className="relative text-lg text-yellow-300 flex items-center justify-between gap-10">
                         <div>
                             <h1><strong>GWON Minyoung</strong></h1>
                             <h2>Front-End <br />Développeur</h2>

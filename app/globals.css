@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --main-bg-color: #BCC6E9;
+  --text-point-color: #65F8D8;
+  --skill-main-color: #323232;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,27 +26,25 @@ body {
   position: relative;
 }
 
-
-.decoration-yellow {
-  color: #F9F871;
+.bg-main {
+  background-color: var(--main-bg-color);
 }
 
-.decoration-green {
-  color: #272E2B;
+.color-point {
+  color: var(--text-point-color);
 }
 
-.bg-yellow {
-  color: #F9F871;
-}
-
+/* customize the size of cursor (Cursor.tsx) */
 .cursor-size {
   font-size: 5px;
 }
 
+/* to have the text 'Scroll down' vertically (Scroll.tsx)*/
 .vertical {
   writing-mode: vertical-rl;
 }
 
+/* Scroll down bar height and the animation (Scroll.tsx) */
 .height {
   height: 75%;
 }
@@ -78,6 +79,8 @@ body {
   animation: moveSmallBar 3s linear infinite;
 }
 
+/*shape divider style (Home page.tsx)*/
+
 .custom-shape-divider-bottom-1699729836 {
   position: absolute;
   bottom: 0;
@@ -97,27 +100,12 @@ body {
 }
 
 .custom-shape-divider-bottom-1699729836 .shape-fill {
-  fill: #BCC6E9;
+  fill: var(--main-bg-color);
 }
 
-.button-background {
-  background-color: #3D4A3D;
-}
-
-.text-main {
-  color: #3D4A3D;
-}
-
-.bg-main {
-  background-color: #BCC6E9;
-}
-
-.color-point {
-  color: #65F8D8;
-}
-
+/*typeit style (Profile page.tsx)*/
 .typeit {
-  color: #65F8D8;
+  color: var(--text-point-color);
   font-size: 4rem;
   font-weight: 600;
   display: flex;
@@ -125,6 +113,8 @@ body {
   align-items: center;
   height: 200px;
 }
+
+/*shape divider style (Profile page.tsx)*/
 
 .custom-shape-divider-top-1699730016 {
   position: absolute;
@@ -144,31 +134,13 @@ body {
 }
 
 .custom-shape-divider-top-1699730016 .shape-fill {
-  fill: #BCC6E9;
+  fill: var(--main-bg-color);
 }
 
-/** **/
-
-
-.v-boxes {
-  display: flex;
-  flex-direction: column;
-}
+/*diamonds skills style (Skill.tsx)*/
 
 .v-boxes:not(:first-child) {
   margin-left: -75px;
-}
-
-.second {
-  margin-top: 75px;
-}
-
-.third {
-  margin-top: 150px;
-}
-
-.forth {
-  margin-top: 225px;
 }
 
 .box {
@@ -199,12 +171,12 @@ body {
 }
 
 .box:hover.link>.box-face>.box-text {
-  color: #323232;
+  color: var(--skill-main-color);
 }
 
 .box.link>.box-face {
-  background-color: #323232;
-  border: 1px solid #323232;
+  background-color: var(--skill-main-color);
+  border: 1px solid var(--skill-main-color);
   box-sizing: border-box;
   transition: background-color 0.5s;
 }

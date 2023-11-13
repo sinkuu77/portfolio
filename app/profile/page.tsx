@@ -5,7 +5,7 @@ export default function Profile() {
         <>
         <section className='h-screen w-full flex flex-col'>
             <div className='h-2/4 w-full bg-main'>
-                <h1 className='text-main text-5xl m-6'><strong>Profile</strong></h1>
+                <h1 className='text-gray-700 text-5xl m-6'><strong>Profile</strong></h1>
                 <h2 className='typeit'>
                     <TypeIt
                         options={{
@@ -24,7 +24,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='my-11'>
-                <div className='w-3/5 flex flex-col m-auto gap-7 text-justify'>
+                <div className='w-3/5 flex flex-col m-auto gap-7 text-justify text-gray-700'>
                     <p className='text-2xl'>
                     Bonjour, je m'appelle <strong className='bg-main color-point'>Minyoung</strong>.
                     Je suis passionnée par l'apprentissage des langues.
