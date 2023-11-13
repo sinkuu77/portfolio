@@ -1,6 +1,5 @@
 'use client'
 
-import NavBar from './components/NavBar';
 import Home from './Home/page';
 import Profile from './profile/page';
 import Projects from './projects/page';
