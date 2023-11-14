@@ -13,7 +13,7 @@ export default function Profile() {
                             speed: 100,
                             waitUntilVisible: true
                         }}
-                    ></TypeIt>
+                    />
                 </h2>
             </div>
             <div className='relative h-4/6 w-full'>
