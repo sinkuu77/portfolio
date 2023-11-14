@@ -1,6 +1,4 @@
 
-
-
 export default function ContactForm() { 
     return (
         <div className='flex flex-col justify-center items-center p-12'>
@@ -18,7 +16,9 @@ export default function ContactForm() {
                     <textarea name='message' rows={10} cols={30} className='rounded p-2'></textarea>
                 </div>
                 <div className='flex items-center justify-center m-10'>
-                    <button className='text-2xl text-yellow-300 bg-gray-700 px-10 py-1.5 rounded-full'>Envoyer</button>
+                    <button className='text-2xl px-10 py-1.5 rounded-full email-btn'>
+                        Envoyer
+                    </button>
                 </div>
             </form>
         </div>

@@ -262,3 +262,16 @@ body {
   border-right: 5px solid transparent;
   border-bottom: 5px solid black;
 }
+
+/*Envoyer button hover (ContactForm.tsx)*/
+.email-btn {
+  background-color: #374151;
+  color: #fde047;
+  transition: all 0.5s linear;
+}
+
+.email-btn:hover {
+  background-color: #fde047;
+  color: #374151;
+  transition: all 0.5s ease-in-out;
+}
