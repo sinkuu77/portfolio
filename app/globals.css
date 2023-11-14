@@ -9,6 +9,8 @@
   --main-bg-color: #BCC6E9;
   --text-point-color: #65F8D8;
   --skill-main-color: #323232;
+  --envoyer-btn-bg: #374151;
+  --envoyer-btn-text: #fde047;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -265,14 +267,14 @@ body {
 
 /*Envoyer button hover (ContactForm.tsx)*/
 .email-btn {
-  background-color: #374151;
-  color: #fde047;
+  background-color: var(--envoyer-btn-bg);
+  color: var(--envoyer-btn-text);
   transition: all 0.5s linear;
 }
 
 .email-btn:hover {
-  background-color: #fde047;
-  color: #374151;
+  background-color: var(--envoyer-btn-text);
+  color: var(--envoyer-btn-bg);
   transition: all 0.5s ease-in-out;
 }
 
