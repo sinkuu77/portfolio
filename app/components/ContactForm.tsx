@@ -1,9 +1,10 @@
-import React, { FormEvent, useRef } from 'react';
+import React, { useState, FormEvent, useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 
 export default function ContactForm() { 
     const form = useRef<HTMLFormElement>(null);
+    const [submissionStatus, setSubmissionStatus] = useState('');
 
     const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -11,13 +12,16 @@ export default function ContactForm() {
     const currentForm = form.current;
     if(currentForm === null) return;
 
-    emailjs.sendForm('service_s4g2q6p', 'template_8ktvrrh', currentForm, 'rIfaJ4iHbkj67vTK2')
+    emailjs.sendForm('service_s4g2q6p', 'template_8ktvrrh', currentForm, 'TpnOmxd2BIHBgGIC1')
         .then((result) => {
             console.log(result.text);
+            setSubmissionStatus('success')
         }, (error) => {
             console.log(error.text);
+            setSubmissionStatus('error')
         });
-    e.currentTarget.reset();
+        e.currentTarget.reset()
+        setSubmissionStatus('')
     };
     return (
         <div className='flex flex-col justify-center items-center p-12'>
@@ -40,6 +44,10 @@ export default function ContactForm() {
                     </button>
                 </div>
             </form>
+            {submissionStatus === 'success' && (
+            <p className='text-gray-700 fade-out'>Message envoyé avec succès!</p>)}
+            {submissionStatus === 'error' && (
+            <p className='text-red-500 fade-out'>Une erreur s'est produite. Veuillez réessayer.</p>)}
         </div>
     )
 }
