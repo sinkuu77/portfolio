@@ -32,7 +32,7 @@ export default function ProjectCard() {
                     >
                         <img 
                         src={project.cover}
-                        alt="la page d'accueil de chaque projet"
+                        alt={project.alt}
                         />
                     </div>
                 ))}
