@@ -7,7 +7,7 @@ export default function Projects() {
                 <h1 className='text-gray-700 text-5xl m-6 p-3'><strong>Projects</strong></h1>
             </div>
             <div className='h-3/4 w-full bg-main'>
-                
+                <ProjectCard />
             </div>
         </section>
     )

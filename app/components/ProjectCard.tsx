@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react'
+
+
 interface Project {
     id: string,
     title: string,
@@ -9,9 +12,17 @@ interface Project {
 }
 
 
-export default async function ProjectCard() { 
-    const response = await fetch('/projectData.json')
-    const projects : Project[] = await response.json()
+export default function ProjectCard() { 
+    const [projects, setProjects] = useState<any[]>([])
+
+    useEffect(() => {
+        fetch('/projectData.json')
+            .then(response => response.json())
+            .then((projectsRes : Project[]) => {
+                setProjects(projectsRes)
+            })
+    })
+    
     return (
         <>
             <ul>
