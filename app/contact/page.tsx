@@ -1,6 +1,6 @@
 import ContactForm from '../components/ContactForm'
+import ScrollToTopIcon from '../components/ScrollToTopIcon'
 
-import { FaArrowCircleUp } from "react-icons/fa";
 
 export default function Contact() { 
     return (
@@ -10,9 +10,7 @@ export default function Contact() {
             </div>
             <div className='relative h-3/4 w-full bg-main'>
                 <ContactForm />
-                <div className='absolute text-gray-700 text-5xl right-20 bottom-20'>
-                    <FaArrowCircleUp />
-                </div>
+                <ScrollToTopIcon />
             </div>
         </section>
     )
