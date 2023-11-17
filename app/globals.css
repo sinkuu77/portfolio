@@ -81,6 +81,12 @@ body {
   animation: moveSmallBar 3s linear infinite;
 }
 
+/*Navbar active color (NavBar.tsx)*/
+
+.active {
+  color: var(--text-point-color);
+}
+
 /*shape divider style (Home page.tsx)*/
 
 .custom-shape-divider-bottom-1699729836 {
