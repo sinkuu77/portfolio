@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
 interface Project {
     id: string,
@@ -13,8 +14,25 @@ interface Project {
 }
 
 
+
 export default function ProjectCard() { 
     const [projects, setProjects] = useState<Project[]>([])
+
+    const [leftArrowOpacity, setLeftArrowOpacity] = useState(0.5)
+    const [rightArrowOpacity, setRightArrowOpacity] = useState(1)
+    const [translate, setTranslate] = useState('')
+
+    
+    const handleLeftArrowClick = () => {
+        setLeftArrowOpacity(0.5)
+        setRightArrowOpacity(1)
+        setTranslate('')
+    }
+    const handleRightArrowClick = () => {
+        setRightArrowOpacity(0.5)
+        setLeftArrowOpacity(1)
+        setTranslate('translate-active')
+    }
 
     useEffect(() => {
         fetch('/projectData.json')
@@ -22,21 +40,32 @@ export default function ProjectCard() {
             .then((projectsRes : Project[]) => {
                 setProjects(projectsRes)
             })
-    })
+    }, [])
     
     return (
         <>
-            <ul className='w-full flex gap-8 justify-center items-center ml-48'>
+            <div className='absolute flex gap-4 text-6xl text-white right-12 top-4 cursor-pointer'>
+                <div onClick={handleLeftArrowClick} className={leftArrowOpacity === 0.5? 'clicked' : 'non-clicked'}>
+                    <IoIosArrowDropleft />
+                </div>
+                <div onClick={handleRightArrowClick} className={rightArrowOpacity === 0.5? 'clicked' : 'non-clicked'}>
+                    <IoIosArrowDropright />
+                </div>
+            </div>
+            <ul className={`w-full flex gap-8 justify-center items-center ml-80 translate-inactive ${translate}`}  >
                 {projects.map((project, index) => (
                     <div
                     className='mt-28'
                     key={`${project.id}-${index}`}
                     >
-                        <img 
-                        className='w-[520px] h-[280px] rounded-3xl object-cover shadow-xl'
-                        src={project.cover}
-                        alt={project.alt}
-                        />
+                        <div 
+                        className='relative inline-block rounded-3xl project-wrapper w-[520px] h-[280px] overflow-hidden'>
+                            <img 
+                            className='w-full h-full rounded-3xl object-cover shadow-xl cursor-pointer project-img'
+                            src={project.cover}
+                            alt={project.alt}
+                            />
+                        </div>
                         <p
                         className='text-white text-2xl mt-2'
                         >
