@@ -22,12 +22,12 @@ export default function ProjectModal({ isVisible, onClose, context, problem, git
                     X
                 </button>
                 <div className='bg-white p-10 rounded-md text-xl text-justify'>
-                    <p className='m-10'>Contexte : {context}</p>
-                    <p className='m-10'>Problématique : {problem}</p>
+                    <p className='m-10'><strong>Contexte :</strong> {context}</p>
+                    <p className='m-10'><strong>Problématique :</strong> {problem}</p>
                     <p className='m-10'>
-                    Github : <a
-                    className='text-blue-800'
-                    href={github} target='_blank'>{github}</a>
+                    <strong>Github :</strong>
+                    <a className='text-blue-800'
+                    href={github} target='_blank'> {github}</a>
                     </p>
                     
                 </div>
