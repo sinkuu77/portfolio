@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+import ProjectModal from './ProjectModal';
 
 interface Project {
     id: string,
@@ -17,11 +18,13 @@ interface Project {
 
 export default function ProjectCard() { 
     const [projects, setProjects] = useState<Project[]>([])
+    const [projectIndex, setProjectIndex] = useState(0)
 
     const [leftArrowOpacity, setLeftArrowOpacity] = useState(0.5)
     const [rightArrowOpacity, setRightArrowOpacity] = useState(1)
     const [translate, setTranslate] = useState('')
 
+    const [showModal, setShowModal] = useState(false)
     
     const handleLeftArrowClick = () => {
         setLeftArrowOpacity(0.5)
@@ -64,6 +67,10 @@ export default function ProjectCard() {
                             className='w-full h-full rounded-3xl object-cover shadow-xl cursor-pointer project-img'
                             src={project.cover}
                             alt={project.alt}
+                            onClick={() => {
+                                setShowModal(true)
+                                setProjectIndex(index)
+                            }}
                             />
                         </div>
                         <p
@@ -83,7 +90,17 @@ export default function ProjectCard() {
                         </ul>
                     </div>
                 ))}
+                <ProjectModal 
+                            isVisible={showModal}
+                            onClose={() => {
+                                setShowModal(false)
+                            }}
+                            context={showModal? projects[projectIndex].contexte : ''}
+                            problem={showModal? projects[projectIndex].problematique : ''}
+                            github={showModal? projects[projectIndex].github : ''}
+                            />
             </ul>
         </>
     )
+
 }

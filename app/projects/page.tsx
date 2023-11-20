@@ -4,7 +4,6 @@ import ProjectCard from '../components/ProjectCard'
 
 
 export default function Projects() { 
-    
     return (
         <section className='w-full h-screen'>
             <div className='h-1/4 w-full'>
