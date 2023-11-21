@@ -14,19 +14,19 @@ export default function ProjectModal({ isVisible, onClose, context, problem, git
         id='wrapper'
         onClick={handleClose}
         >
-            <div className='w-[800px] flex flex-col'>
+            <div className='w-[800px] flex flex-col lg:w-[700px] md:w-[300px]'>
                 <button 
                 className='text-white text-2xl place-self-end'
                 onClick={() => onClose()}
                 >
                     X
                 </button>
-                <div className='bg-white p-10 rounded-md text-xl text-justify'>
+                <div className='bg-white p-10 rounded-md text-xl text-justify md:text-sm md:p-1'>
                     <p className='m-10'><strong>Contexte :</strong> {context}</p>
                     <p className='m-10'><strong>Problématique :</strong> {problem}</p>
                     <p className='m-10'>
                     <strong>Github :</strong>
-                    <a className='text-blue-800'
+                    <a className='text-blue-800 md:text-xs'
                     href={github} target='_blank'> {github}</a>
                     </p>
                     
