@@ -98,6 +98,11 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.navbar-show {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out
+}
+
 /*shape divider style (Home page.tsx)*/
 
 .custom-shape-divider-bottom-1699729836 {
