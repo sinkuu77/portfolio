@@ -10,8 +10,8 @@ export default function NavBar() {
         <button
             className='rounded-full w-20 h-20 text-xl fixed right-7 top-10 bg-green-200 text-indigo-950 font-bold z-10 navbar-menu md:w-16 md:h-16 md:text-base'
             >Menu
-            </button>
-        <nav className='fixed bg-white px-3'>
+        </button>
+        <nav className='fixed bg-white px-3 right-7 opacity-70'>
             <ul className='text-gray-700 text-xl font-bold h-full flex gap-12'>
                 <li>
                     <Link 

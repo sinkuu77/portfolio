@@ -6,7 +6,6 @@ import type { Metadata } from 'next'
 import Cursor from './components/Cursor'
 
 
-
 const karla = Karla({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
