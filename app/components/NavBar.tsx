@@ -18,7 +18,7 @@ export default function NavBar() {
             >{showNavBar? 'Close' : 'Menu'}
         </button>
         <nav
-            className={`fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center p-4 z-10 ${
+            className={`fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center p-4 ${
             showNavBar ? 'opacity-100' : 'opacity-0'
             } transition-opacity ease-in-out duration-500`}
         >
