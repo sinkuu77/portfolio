@@ -3,7 +3,7 @@ import TypeIt from 'typeit-react'
 export default function Profile() { 
     return (
         <>
-        <section className='h-full w-full'>
+        <section className='w-full'>
             <div className='h-1/6 w-full bg-main'>
                 <h1 className='text-gray-700 text-5xl m-0 p-6 pb-0'><strong>Profile</strong></h1>
                 <h2 className='typeit'>
@@ -23,7 +23,7 @@ export default function Profile() {
                     </svg>
                 </div>
             </div>
-            <div className='my-11'>
+            <div className='my-18 pt-44'>
                 <div className='h-4/6 w-3/5 flex flex-col m-auto gap-7 text-justify text-gray-700'>
                     <p className='text-xl'>
                     Bonjour, je m'appelle <strong className='bg-main color-point'>Minyoung</strong>.

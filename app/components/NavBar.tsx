@@ -6,6 +6,11 @@ import { Link } from 'react-scroll'
 
 export default function NavBar() { 
     return (
+        <>
+        <button
+            className='rounded-full w-20 h-20 fixed right-4 top-10 bg-green-200 text-indigo-950 font-bold z-10 navbar-menu'
+            >Menu
+            </button>
         <nav className='fixed right-7 bg-white opacity-70 px-3 rounded-md z-10'>
             <ul className='text-gray-700 text-xl font-bold h-full flex gap-12'>
                 <li>
@@ -65,5 +70,6 @@ export default function NavBar() {
                 </li>
             </ul>
         </nav>
+        </>
     )
 }
