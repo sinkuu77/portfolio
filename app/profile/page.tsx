@@ -3,10 +3,10 @@ import TypeIt from 'typeit-react'
 export default function Profile() { 
     return (
         <>
-        <section className='w-full'>
+        <section className='h-full w-full'>
             <div className='h-1/6 w-full bg-main'>
-                <h1 className='text-gray-700 text-5xl m-0 p-6 pb-0'><strong>Profile</strong></h1>
-                <h2 className='typeit'>
+                <h1 className='text-gray-700 text-5xl m-0 p-6 pb-0 md:text-3xl'><strong>Profile</strong></h1>
+                <h2 className='typeit md:text-5xl'>
                     <TypeIt
                         options={{
                             strings: ["Front-End", "Développeur"],
@@ -25,17 +25,17 @@ export default function Profile() {
             </div>
             <div className='my-18 pt-44'>
                 <div className='h-4/6 w-3/5 flex flex-col m-auto gap-7 text-justify text-gray-700'>
-                    <p className='text-xl'>
+                    <p className='text-xl md:text-base'>
                     Bonjour, je m'appelle <strong className='bg-main color-point'>Minyoung</strong>.
                     Je suis passionnée par l'apprentissage des langues.
                     J'ai étudié le français à l'université et j'ai perfectionné mon anglais grâce à des correspondantes.
                     Ensuite, j'ai vécu au Japon pendant un an et demi avec un visa vacances-travail pour approfondir ma connaissance de la langue japonaise.
                     </p>
-                    <p className='text-xl'>
+                    <p className='text-xl md:text-base'>
                     Ma fascination pour la programmation, qui permet la communication avec les ordinateurs,
                     m'a conduit à poursuivre une carrière en tant qu'intégrateur web. Je suis diplômée du <strong className='bg-main color-point'>RNCP (niveau 5) en intégration web</strong>.
                     </p>
-                    <p className='text-xl'>
+                    <p className='text-xl md:text-base'>
                     Je suis heureuse de vous accueillir sur mon site de portfolio.
                     </p>
                 </div>

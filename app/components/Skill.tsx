@@ -6,7 +6,7 @@ import { AiFillGithub } from 'react-icons/ai'
 
 export default function Skill() { 
     return (
-        <section className='flex justify-center pl-[75px]'>
+        <section className='flex justify-center pl-[75px] md:pl-0'>
             <div className="flex">
                 <div className="flex flex-col v-boxes">
                 <div className="box">

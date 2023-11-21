@@ -36,7 +36,7 @@ export default function ProjectCard() {
                     key={`${project.id}-${index}`}
                     >
                         <div 
-                        className='relative inline-block project-wrapper w-[600px] h-[280px] overflow-hidden'>
+                        className='relative inline-block project-wrapper w-[600px] h-[280px] overflow-hidden md:w-[350px] md:h-[190px]'>
                             <img
                             className='w-full h-full object-cover shadow-xl cursor-pointer project-img'
                             src={project.cover}
@@ -50,7 +50,7 @@ export default function ProjectCard() {
                             {project.tags.map((tag:string, tagIndex:number) => (
                                 <li
                                 key={`${tag}-${tagIndex}`}
-                                className='bg-yellow-300 rounded px-2 mt-2 text-gray-500'
+                                className='bg-yellow-300 rounded px-2 mt-2 text-gray-500 md:text-xs'
                                 >
                                     {tag}
                                 </li>
@@ -58,7 +58,7 @@ export default function ProjectCard() {
                         </ul>
                         </div>
                         <p
-                        className='text-white text-xl mt-2'
+                        className='text-white text-xl mt-2 md:text-base'
                         >
                             {project.title}
                         </p>
