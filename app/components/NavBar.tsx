@@ -19,7 +19,7 @@ export default function NavBar() {
         </button>
         <nav
             className={`fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center p-4 ${
-            showNavBar ? 'opacity-100' : 'opacity-0'
+            showNavBar ? 'opacity-100 z-10' : 'opacity-0'
             } transition-opacity ease-in-out duration-500`}
         >
         <ul className='text-gray-200 text-xl font-bold h-full flex gap-12 md:flex-col md:p-5'>
