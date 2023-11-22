@@ -49,7 +49,7 @@ export default function ContactForm() {
             {submissionStatus === 'success' && (
             <p className='text-gray-700 fade-out'>Message envoyé avec succès!</p>)}
             {submissionStatus === 'error' && (
-            <p className='text-red-500 fade-out'>Une erreur s'est produite. Veuillez réessayer.</p>)}
+            <p className='text-red-500 fade-out'>Une erreur s&apos;est produite. Veuillez réessayer.</p>)}
         </div>
     )
 }

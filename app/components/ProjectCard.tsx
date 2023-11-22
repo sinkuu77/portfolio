@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 
 import ProjectModal from './ProjectModal';
+import Image from 'next/image';
 
 interface Project {
     id: string,
@@ -38,7 +39,7 @@ export default function ProjectCard() {
                     >
                         <div 
                         className='relative inline-block project-wrapper w-[600px] h-[280px] overflow-hidden md:w-[350px] md:h-[190px]'>
-                            <img
+                            <Image
                             className='w-full h-full object-cover shadow-xl cursor-pointer project-img'
                             src={project.cover}
                             alt={project.alt}

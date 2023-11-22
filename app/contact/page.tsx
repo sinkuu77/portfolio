@@ -1,3 +1,5 @@
+'use client'
+
 import ContactForm from '../components/ContactForm'
 import ScrollToTopIcon from '../components/ScrollToTopIcon'
 
