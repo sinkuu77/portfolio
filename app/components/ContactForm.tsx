@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, FormEvent, useRef } from 'react';
 import emailjs from 'emailjs-com';
 
