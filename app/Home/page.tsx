@@ -18,7 +18,7 @@ export default function Home() {
                             <h1><strong>GWON Minyoung</strong></h1>
                             <h2>Front-End <br />Développeur</h2>
                         </div>
-                        <a id='pdf-container' className='hoverable' download='GWON Minyoung' href='/CV_FE.pdf'>
+                        <a id='pdf-container' className='hoverable' download='GWON Minyoung' href='/CV_FE.pdf' aria-label='télécharger un fichier de CV en pdf'>
                             <div id='pdf-icon' className='text-2xl'>
                                 <FaFilePdf />
                             </div>
