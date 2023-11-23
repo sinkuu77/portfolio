@@ -26,7 +26,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='my-18 pt-44'>
-                <div className='h-4/6 w-3/5 flex flex-col m-auto gap-7 text-justify text-gray-700'>
+                <div className='h-4/6 w-3/5 flex flex-col m-auto gap-7 text-left text-gray-700'>
                     <p className='text-xl md:text-base'>
                     Bonjour, je m&apos;appelle <strong className='bg-gray-700 color-point'>Minyoung</strong>.
                     Je suis passionnée par l&apos;apprentissage des langues.

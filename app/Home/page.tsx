@@ -9,8 +9,11 @@ export default function Home() {
     return (
         <>
             <section id='home' className="w-full h-full relative">
-                <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover -z-10">
-                <source src="/ferris_wheel.mp4" type="video/mp4" />
+                <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover -z-10"
+                aria-label="Vidéo de fond décorative sans contenu audio"
+                >
+                    <source src="/ferris_wheel.mp4" type="video/mp4" />
+                    <track kind='captions' src='#' srcLang='fr' label='french' />
                 </video>
                 <header className='p-6 flex justify-between'>
                     <div className="relative text-lg bg-white opacity-70 p-3 text-gray-700 flex items-center justify-between gap-10 md:flex-col md:items-start">
