@@ -32,7 +32,7 @@ export default function ProjectCard() {
     
     return (
         <>
-            <ul className='flex flex-wrap items-center justify-center gap-5 m-auto py-14 px-10'  >
+            <div className='flex flex-wrap items-center justify-center gap-5 m-auto py-14 px-10'  >
                 {projects.map((project, index) => (
                     <div
                     key={`${project.id}-${index}`}
@@ -77,7 +77,7 @@ export default function ProjectCard() {
                             problem={showModal? projects[projectIndex].problematique : ''}
                             github={showModal? projects[projectIndex].github : ''}
                             />
-            </ul>
+            </div>
         </>
     )
 
