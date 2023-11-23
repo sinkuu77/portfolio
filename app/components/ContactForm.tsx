@@ -38,7 +38,7 @@ export default function ContactForm() {
                 </div>
                 <div className='flex flex-col gap-2 text-gray-700 w-[650px] md:w-[300px]'>
                     <label className='text-2xl md:text-xl' htmlFor='message'>Message</label>
-                    <textarea id='message 'name='message' rows={10} cols={30} className='rounded p-2' required></textarea>
+                    <textarea id='message' name='message' rows={10} cols={30} className='rounded p-2' required></textarea>
                 </div>
                 <div className='flex items-center justify-center m-10'>
                     <button className='text-2xl px-10 py-1.5 rounded-full email-btn md:text-base'>
