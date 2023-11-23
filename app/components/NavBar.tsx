@@ -15,11 +15,11 @@ export default function NavBar() {
             onClick={() => {
                 setShowNavBar((current) => !current)
             }}
-            >{showNavBar? 'Menu' : 'Close'}
+            >{showNavBar? 'Close' : 'Menu'}
         </button>
         <nav
             className={`fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center p-4 ${
-            showNavBar ? '-translate-y-full z-20' :  'translate-y-0 z-20'
+            showNavBar ? 'translate-y-0 z-20' :  '-translate-y-full z-20'
             } transition-translate-y ease-in-out duration-500`}
         >
         <ul className='text-gray-200 text-xl font-bold h-full flex gap-12 md:flex-col md:p-5'>
