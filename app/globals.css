@@ -130,7 +130,7 @@ body {
 
 /*typeit style (Profile page.tsx)*/
 .typeit {
-  color: var(--text-point-color);
+  color: var(--envoyer-btn-bg);
   font-size: 4rem;
   font-weight: 600;
   display: flex;

@@ -8,7 +8,7 @@ export default function Scroll() {
                 <div className='absolute border-l-4 h-1/5 opacity-50 border-white vertical small-bar'>
                 </div>
             </div>
-            <span className=' text-white vertical'>
+            <span className='bg-white opacity-70 p-2 rounded-md text-gray-700 vertical'>
                 Scroll Down
             </span>
         </div>
