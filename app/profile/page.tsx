@@ -5,7 +5,7 @@ import TypeIt from 'typeit-react'
 export default function Profile() { 
     return (
         <>
-        <section className='h-full w-full'>
+        <section id='profile' className='h-full w-full'>
             <div className='h-1/6 w-full bg-main'>
                 <h1 className='text-gray-700 text-5xl m-0 p-6 pb-0 md:text-3xl'><strong>Profile</strong></h1>
                 <h2 className='typeit md:text-5xl'>

@@ -28,6 +28,7 @@ export default function NavBar() {
                 activeClass='active'
                 className='view hover:cursor-pointer' 
                 to='home'
+                href='#home'
                 spy={true}
                 smooth={true}
                 duration={700}
@@ -39,6 +40,7 @@ export default function NavBar() {
                 activeClass='active'
                 className='view hover:cursor-pointer' 
                 to='profile'
+                href='#profile'
                 spy={true}
                 smooth={true}
                 duration={700}
@@ -50,6 +52,7 @@ export default function NavBar() {
                 activeClass='active'
                 className='view hover:cursor-pointer' 
                 to='projects'
+                href='#projects'
                 spy={true}
                 smooth={true}
                 duration={700}
@@ -61,6 +64,7 @@ export default function NavBar() {
                 activeClass='active'
                 className='view hover:cursor-pointer' 
                 to='skills'
+                href='#skills'
                 spy={true}
                 smooth={true}
                 duration={700}
@@ -72,6 +76,7 @@ export default function NavBar() {
                 activeClass='active'
                 className='view hover:cursor-pointer' 
                 to='contact'
+                href='#contact'
                 spy={true}
                 smooth={true}
                 duration={700}

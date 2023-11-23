@@ -8,7 +8,7 @@ import {FaFilePdf} from 'react-icons/fa'
 export default function Home() {
     return (
         <>
-            <section className="w-full h-full relative">
+            <section id='home' className="w-full h-full relative">
                 <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover -z-10">
                 <source src="/ferris_wheel.mp4" type="video/mp4" />
                 </video>
