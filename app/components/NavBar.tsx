@@ -11,15 +11,15 @@ export default function NavBar() {
     return (
         <>
         <button
-            className='rounded-full w-20 h-20 text-xl fixed right-7 top-10 bg-green-200 text-indigo-950 font-bold z-20 navbar-menu md:w-16 md:h-16 md:text-base'
+            className='rounded-full w-20 h-20 text-xl fixed right-7 top-10 bg-green-200 text-indigo-950 font-bold z-30 navbar-menu md:w-16 md:h-16 md:text-base'
             onClick={() => {
                 setShowNavBar((current) => !current)
             }}
-            >{showNavBar? 'Close' : 'Menu'}
+            >{showNavBar? 'Menu' : 'Close'}
         </button>
         <nav
             className={`fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center p-4 ${
-            showNavBar ? '-translate-y-full' :  'translate-y-0'
+            showNavBar ? '-translate-y-full z-20' :  'translate-y-0 z-20'
             } transition-translate-y ease-in-out duration-500`}
         >
         <ul className='text-gray-200 text-xl font-bold h-full flex gap-12 md:flex-col md:p-5'>
