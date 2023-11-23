@@ -40,6 +40,8 @@ export default function ProjectCard() {
                         <div 
                         className='relative inline-block project-wrapper w-[600px] h-[280px] overflow-hidden md:w-[350px] md:h-[190px]'>
                             <Image
+                            width={600}
+                            height={280}
                             className='w-full h-full object-cover shadow-xl cursor-pointer project-img'
                             src={project.cover}
                             alt={project.alt}

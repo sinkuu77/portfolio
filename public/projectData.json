@@ -2,7 +2,7 @@
     {
         "id": "a67ab8a7",
         "title": "Oh my food",
-        "cover": "img/ohmyfood.webp",
+        "cover": "/img/ohmyfood.webp",
         "alt": "Une page d'accueil comprenant les menus de restaurants",
         "contexte": "Ohmyfood est un site \"mobile first\" qui répertorie les menus de restaurants gastronomiques. Il permet aux clients de composer leur menu pour que les plats soient prêts à leur arrivée.",
         "problematique": "Il y avait une mission où je devais implémenter un loader de page sans utiliser JavaScript. C'est-à-dire que je devais résoudre ce problème uniquement avec CSS. Il fallait que le spinner tourne pendant quelques secondes puis disparaisse de la page. En parcourant les différentes propriétés de transformation CSS sur MDN, j'ai découvert 'scaleZ', ce qui m'a permis de résoudre le problème.",
@@ -15,7 +15,7 @@
     {
         "id": "b89ab8a7",
         "title": "Portfolio d'une architecte",
-        "cover": "img/portfolio.webp",
+        "cover": "/img/portfolio.webp",
         "alt": "Une page d'accueil avec la photo de profil et des photos de l'intérieur",
         "contexte": "Ceci est le portfolio en ligne d'une architecte d'intérieur. J'ai géré le côté client de ce projet. Sur ce site, vous pouvez vous connecter (en utilisant les informations d'utilisateur décrites dans le README), trier des images, créer et supprimer des images.",
         "problematique": "Il était difficile d'implémenter le processus de conversion d'une URL d'image téléchargée par l'utilisateur en un fichier pour l'envoyer en tant que requête POST au serveur. J'ai trouvé de l'aide en consultant un autre utilisateur qui avait des problèmes similaires sur Stack Overflow. Grâce à cette publication, j'ai appris qu'il fallait séparer l'URL en type et en données, puis utiliser la fonction 'atob' pour décoder les données et les convertir en un tableau d'octets.",
@@ -29,7 +29,7 @@
     {
         "id": "c90ab8a7",
         "title": "Kasa",
-        "cover": "img/kasa.webp",
+        "cover": "/img/kasa.webp",
         "alt": "Une page d'accueil comprenant des photos de la location d'appartements",
         "contexte": "Kasa est une entreprise spécialisée dans la location d'appartements entre particuliers. Elle a entrepris une refonte complète en optant pour une stack entièrement en JavaScript, avec Node.js du côté du back-end et React du côté du front-end. Dans le cadre de ce projet, j'ai réalisé la partie front-end.",
         "problematique": "Lorsque j'utilisais React, je rencontrais fréquemment des difficultés à gérer les erreurs 'Cannot read properties of undefined'. J'ai découvert la cause de ces erreurs grâce à un article de blog, qui expliquait que l'erreur se produit lorsque l'on essaie d'accéder à une valeur non définie, comme un tableau qui n'a pas été initialisé ou qui n'a pas encore reçu de données. Par exemple, lorsqu'on récupère des éléments de tâches à partir des données de JSON Placeholder, il arrive que la méthode map soit appelée avant que les données de la requête API ne soient disponibles. Depuis lors, je veille à utiliser des opérateurs de comparaison pour prévenir la réapparition de ce même problème.",
@@ -42,7 +42,7 @@
     {
         "id": "d12ab8a7",
         "title": "Argent Bank",
-        "cover": "img/argentbank.webp",
+        "cover": "/img/argentbank.webp",
         "alt": "Une page d'accueil de la banque en ligne",
         "contexte": "Argent Bank est une banque en ligne. Dans ce projet, j'ai mis en place la fonctionnalité de connexion de l'utilisateur et la modification du pseudo en utilisant Redux. J'ai également rédigé la documentation de l'API en utilisant Swagger. Sur le site, vous pouvez vous connecter en utilisant les informations indiquées dans le README et modifier votre pseudo.",
         "problematique": "En implémentant la fonctionnalité de modification du pseudo de l'utilisateur, j'ai rencontré un problème où, lors de la soumission d'un formulaire, la page se rafraîchissait, et les valeurs récupérées via l'état disparaissaient. Après des recherches, j'ai découvert que je pouvais résoudre ce problème en utilisant Redux Persist pour stocker ces valeurs dans le localStorage. Grâce à la documentation officielle de Redux Persist, j'ai appris comment appliquer la persistance et configurer cela, ce qui m'a permis de maintenir l'état même lorsque la page se rafraîchit.",
