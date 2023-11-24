@@ -29,7 +29,7 @@ export default function RootLayout({
         <meta property="og:description" content={metadata.description?? 'Default Description'} key="ogdesc" />
         <meta
             property="og:image"
-            content="/img/site.png"
+            content="https://i.ibb.co/r4M4B14/site.png"
             key="ogimage"
         />
         <meta
