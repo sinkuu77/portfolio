@@ -6,8 +6,6 @@ import type { Metadata } from 'next'
 import Cursor from './components/Cursor'
 import Head from 'next/head'
 
-import Img from '../public/img/site.png'
-
 const karla = Karla({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -31,7 +29,7 @@ export default function RootLayout({
         <meta property="og:description" content={metadata.description?? 'Default Description'} key="ogdesc" />
         <meta
             property="og:image"
-            content="../public/img/site.png"
+            content="https://portfolio-blue-nine-67.vercel.app/img/site.png"
             key="ogimage"
         />
         <meta
