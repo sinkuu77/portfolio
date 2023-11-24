@@ -29,7 +29,7 @@ export default function RootLayout({
         <meta property="og:description" content={metadata.description?? 'Default Description'} key="ogdesc" />
         <meta
             property="og:image"
-            content="https://portfolio-blue-nine-67.vercel.app/img/site.png"
+            content="/img/site.png"
             key="ogimage"
         />
         <meta
