@@ -6,11 +6,13 @@ import type { Metadata } from 'next'
 import Cursor from './components/Cursor'
 import Head from 'next/head'
 
+import Img from '../public/img/site.png'
+
 const karla = Karla({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'GWON Minyoung portfolio frontend developer',
-  description: 'Un site de portfolio pour GWON Minyoung, développeuse frontend à Strasbourg, actuellement à la recherche de son premier emploi dans ce domaine.',
+  description: 'Un site de portfolio pour GWON Minyoung, développeuse frontend à Strasbourg, actuellement à la recherche de son premier emploi dans ce domaine.'
 }
 
 export default function RootLayout({
@@ -29,7 +31,7 @@ export default function RootLayout({
         <meta property="og:description" content={metadata.description?? 'Default Description'} key="ogdesc" />
         <meta
             property="og:image"
-            content="/img/site.png"
+            content="../public/img/site.png"
             key="ogimage"
         />
         <meta
