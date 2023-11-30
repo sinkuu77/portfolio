@@ -14,16 +14,16 @@ export default function Scrolling() {
         <Element name='home' className='h-screen'>
           <Home />
         </Element>
-        <Element name='profile' className='min-h-screen'>
+        <Element name='profile' className='min-h-full mb-[300px]'>
           <Profile />
         </Element>
-        <Element name='projects' className='min-h-screen'>
+        <Element name='projects' className='min-h-full'>
           <Projects />
         </Element>
-        <Element name='skills' className='min-h-screen'>
+        <Element name='skills' className='min-h-full mb-[300px]'>
           <Skills />
         </Element>
-        <Element name='contact' className='min-h-screen'>
+        <Element name='contact' className='min-h-full'>
           <Contact />
         </Element>
     </>
