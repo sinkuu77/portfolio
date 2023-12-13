@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GWON Minyoung portfolio frontend developer
 
-## Getting Started
+<p>Voici mon site portfolio de développeur frontend.</p>
+<p> Vous pouvez trouver le lien vers le site ci-dessous 👇 : </p>
+<a href="https://minyounggwon-frontend.com/">https://minyounggwon-frontend.com/</a>
 
-First, run the development server:
+## Preview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<img src=https://i.ibb.co/hBrRfWP/1.png />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## le délai de production du site
+06.09.23 - 21.09.23
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Stack utilisé
+Next.js, TypeScript, Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Point
+Le concept de ce site est basé sur la grande roue. Pour cela, j'ai créé une application monopage qui permet aux utilisateurs de naviguer via l'animation de défilement en utilisant react-scroll.
 
-## Learn More
+## Problème en réalisant ce projet
+1. 😱**Pendant le déploiement**,
+<p> j'ai rencontré des difficultés liées aux  composants côté client. J'étais conscient que, dans Next.js, il est essentiel de signaler 'use client' en haut du fichier lors de l'utilisation d'éléments interactifs avec les utilisateurs, tels que les eventListener, use State. Malheureusement, j'ai omis cette déclaration pour quelques composants, et bien que mon projet fonctionnait correctement localement avec npm, des erreurs sont apparues lors du déploiement sur Vercel. </p>
+<p>Cela souligne l'importance de rester attentif à ce problème lors de l'utilisation de Next.js, car l'omission de la déclaration 'use client' pour les composants côté client peut entraîner des erreurs spécifiques au moment du déploiement.</p>
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. 😱**À plusieurs reprises au cours de ce projet, j'ai dû ajuster la structure du site par rapport à la maquette initiale.**
+<p>Par exemple, pour la version mobile, j'avais initialement créé une maquette avec une navigation basée sur des icônes. Cependant, en utilisant React-scroll, je me suis rendu compte que modifier la structure pour la version mobile tout en conservant la navigation via l'animation de défilement était plus complexe que prévu.</p>
+<p>Enfin, j'ai pris la décision de maintenir la navigation via l'animation de défilement pour la version mobile.</p>
+<p>Cela m'a conduit à comprendre l'importance de la communication en tant que développeur. Cette expérience m'a montré que la capacité à expliquer et à justifier ses choix est cruciale. </p>
