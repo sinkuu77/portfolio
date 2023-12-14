@@ -52,6 +52,20 @@
             "Redux",
             "Sass"
         ]
+    },
+    {
+        "id": "e17ab8a7",
+        "title": "Mon vieux grimoire",
+        "cover": "/img/grimoire.webp",
+        "alt": "Une page d'accueil du site de notation de livres",
+        "contexte": "'Mon vieux grimoire' est un site de notation de livres. Sur ce site, les utilisateurs ont la possibilité de s'inscrire et de se connecter. Ensuite, ils peuvent enregistrer des livres et partager leurs avis en attribuant des étoiles.",
+        "problematique": "Pendant ce projet, une erreur liée à CORS est survenue en raison de la différence entre le domaine du côté client et celui du côté serveur. Pour résoudre ce problème, j'ai ajouté un package npm appelé cors.",
+        "github": "https://github.com/sinkuu77/mon-vieux-grimoire",
+        "tags": [
+            "Node.js",
+            "Express",
+            "Mongo DB"
+        ]
     }
     
 ]
